@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+body::after {
+  content: "";
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50vw;
+  background-color: rgb(236, 0, 0);
+  border-radius: 50%;
+  transform: scale(1.2) translateX(95px);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
