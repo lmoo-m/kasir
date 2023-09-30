@@ -27,6 +27,7 @@ export default function FormCategory({ setShow }: props) {
   const [type, setType] = useState("");
 
   const onSubmit = async () => {
+    const p = "p";
     const data = {
       title: title,
       type: type,
